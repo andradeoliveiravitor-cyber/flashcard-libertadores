@@ -54,25 +54,4 @@ p {
     height: 100%;
     backface-visibility: hidden;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 12px;
-    text-align: center;
-    font-size: 1.1em;
-}
-
-.frente {
-    background-color: #ffffff;
-    color: #222;
-    font-weight: bold;
-    border: 2px solid #004b23;
-}
-
-.verso {
-    background-color: #004b23;
-    color: #ffffff;
-    transform: rotateY(180deg);
-    border: 2px solid #004b23;
-}
+    align-items
