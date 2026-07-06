@@ -1,102 +1,103 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards - Copa Libertadores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    <div class="flashcard">
-        <div class="card">
-            <div class="face front">🏆 Palmeiras</div>
-            <div class="face back">
-                <strong>País:</strong> Brasil<br>
-                <strong>Títulos:</strong> 3<br>
-                <strong>Primeira participação:</strong> 1961
-            </div>
+        h1 {
+            color: #004b23; /* Verde Libertadores */
+            margin-bottom: 30px;
+        }
+
+        /* Container que organiza os cards lado a lado e embaixo */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        /* Estilo de cada Flashcard */
+        .flashcard {
+            background-color: #ffffff;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        /* Efeito visual ao passar o mouse */
+        .flashcard:hover {
+            transform: translateY(-5px);
+            border-color: #004b23;
+        }
+
+        .pergunta {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .resposta {
+            color: #666;
+            font-style: italic;
+            border-top: 1px dashed #ddd;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🏆 Flashcards: Copa Libertadores 🏆</h1>
+
+    <div class="grid-container">
+        
+        <div class="flashcard">
+            <div class="pergunta">Quem é o maior campeão da história da Libertadores?</div>
+            <div class="resposta">Independiente (Argentina), com 7 títulos.</div>
         </div>
+
+        <div class="flashcard">
+            <div class="pergunta">Em que ano foi disputada a primeira edição do torneio?</div>
+            <div class="resposta">Em 1960 (vencida pelo Peñarol).</div>
+        </div>
+
+        <div class="flashcard">
+            <div class="pergunta">Qual clube brasileiro tem mais títulos da Libertadores?</div>
+            <div class="resposta">São Paulo, Palmeiras, Santos, Grêmio e Flamengo (empatados com 3 títulos cada).</div>
+        </div>
+
+        <div class="flashcard">
+            <div class="pergunta">Quem é o maior artilheiro de todos os tempos da competição?</div>
+            <div class="resposta">Alberto Spencer (equatoriano), com 54 gols.</div>
+        </div>
+
+        <div class="flashcard">
+            <div class="pergunta">Qual foi a primeira final única em campo neutro?</div>
+            <div class="resposta">Em 2019, em Lima (Peru), entre Flamengo e River Plate.</div>
+        </div>
+
+        <div class="flashcard">
+            <div class="pergunta">O campeão da Libertadores garante vaga em quais torneios?</div>
+            <div class="resposta">Mundial de Clubes da FIFA e Recopa Sul-Americana.</div>
+        </div>
+
     </div>
 
-    <div class="flashcard">
-        <div class="card">
-            <div class="face front">🔴 Flamengo</div>
-            <div class="face back">
-                <strong>País:</strong> Brasil<br>
-                <strong>Títulos:</strong> 3<br>
-                <strong>Primeira participação:</strong> 1981
-            </div>
-        </div>
-    </div>
-
-    <div class="flashcard">
-        <div class="card">
-            <div class="face front">⚫ Santos</div>
-            <div class="face back">
-                <strong>País:</strong> Brasil<br>
-                <strong>Títulos:</strong> 3<br>
-                <strong>Primeira participação:</strong> 1962
-            </div>
-        </div>
-    </div>
-
-    <div class="flashcard">
-        <div class="card">
-            <div class="face front">⚪ São Paulo</div>
-            <div class="face back">
-                <strong>País:</strong> Brasil<br>
-                <strong>Títulos:</strong> 3<br>
-                <strong>Primeira participação:</strong> 1972
-            </div>
-        </div>
-    </div>
-
-    <div class="flashcard">
-        <div class="card">
-            <div class="face front">🔵 Grêmio</div>
-            <div class="face back">
-                <strong>País:</strong> Brasil<br>
-                <strong>Títulos:</strong> 3<br>
-                <strong>Primeira participação:</strong> 1982
-            </div>
-        </div>
-    </div>
-
-    <div class="flashcard">
-        <div class="card">
-            <div class="face front">🟡 Boca Juniors</div>
-            <div class="face back">
-                <strong>País:</strong> Argentina<br>
-                <strong>Títulos:</strong> 6<br>
-                <strong>Primeira participação:</strong> 1963
-            </div>
-        </div>
-    </div>
-
-    <div class="flashcard">
-        <div class="card">
-            <div class="face front">🔴 River Plate</div>
-            <div class="face back">
-                <strong>País:</strong> Argentina<br>
-                <strong>Títulos:</strong> 4<br>
-                <strong>Primeira participação:</strong> 1966
-            </div>
-        </div>
-    </div>
-
-    <div class="flashcard">
-        <div class="card">
-            <div class="face front">⚫ Peñarol</div>
-            <div class="face back">
-                <strong>País:</strong> Uruguai<br>
-                <strong>Títulos:</strong> 5<br>
-                <strong>Primeira participação:</strong> 1960
-            </div>
-        </div>
-    </div>
-
-    <div class="flashcard">
-        <div class="card">
-            <div class="face front">🔵 Nacional</div>
-            <div class="face back">
-                <strong>País:</strong> Uruguai<br>
-                <strong>Títulos:</strong> 3<br>
-                <strong>Primeira participação:</strong> 1962
-            </div>
-        </div>
-    </div>
-
-</div>
+</body>
+</html>
